@@ -22,6 +22,7 @@
         is3D: true,
         legend: 'labeled',
         backgroundColor: 'transparent',
+        pieSliceText: 'value',
     };
 
     var chart = new google.visualization.PieChart(document.querySelector('.graficoDiaria'));

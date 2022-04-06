@@ -3,6 +3,7 @@ import { diariaCompleta } from './diariaCompleta.js'
 var result = 0;
 var resultFinal = 0;
 
+
 /* Function dias de trabalho */
 let button = document.querySelector('.calculaDiaria')
 button.addEventListener('click', function () {
@@ -20,7 +21,7 @@ button.addEventListener('click', function () {
     }
     else {
         apresentaResult.style.color = 'red'
-        apresentaResult.textContent = 'Resultado invalido!'
+        apresentaResult.textContent = 'Valor invalido'
     }
 })
 

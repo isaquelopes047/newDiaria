@@ -9,9 +9,12 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="module" src="../JS/graficoPie.js"></script>
     <script type="module" src="../JS/graficoBarras.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- <link rel="stylesheet" href="../style/dash.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/newDash.css">
+    <link rel="stylesheet" href="../style/footer.css">
     <title>Dashboard</title>
 </head>
 <body>
@@ -23,9 +26,31 @@
     </header>
 
     <main>
+
+        <div class="ContainerButtonOpen">
+            <button class="openButton"> <img src="../icones/icons8-informações-48.png" alt=""> </button>
+        </div>
+
+        <div class="footerFluter">
+            <div class="closeButton">
+                <button>X</button>
+            </div>
+            <div class="containerRedes">
+                <div class="redes"><img src="../icones/icons8-gmail-48.png" alt=""></div>
+                <div class="redes"><img src="../icones/icons8-github-48.png" alt=""></div>
+                <div class="redes"><img src="../icones/icons8-linkedin-48.png" alt=""></div>
+            </div>
+            <div class="containerInfoDev">
+                Developed Isaque Lopes
+            </div>
+            <div class="info">
+                2022
+            </div>
+        </div>
+
         <div class="containerDadosCompletos">
 
-                <div class="cardInfo ">
+                <div class="cardInfo">
                     <div class="apresetaResultadoFinal">
                         <p class="apresentaResult"> 0 </p>
                         <p>Dias trabalhados</p>
@@ -44,7 +69,13 @@
                     </div>
                 </div>
                 <div class="cardInfo ">
-
+                    <div class="apresetaResultadoFinal">
+                        <p class="apresentaResulHoras"> 0 </p>
+                        <p>Horas de trabalho</p>
+                    </div>
+                    <div class="containerIcon">
+                        <img src="../icones/icons8-alarm-clock-48.png" alt="">
+                    </div>
                 </div>
                 <div class="cardInfo ">
 
@@ -52,11 +83,11 @@
 
         </div>
         
-        <div class="containerAll">
+        <div class="containerAll" >
             <div class="containerInfoDados">
 
                 <!-- Calcula Diaria -->
-                <div class="containersSections">
+                <div class="containersSections" data-aos="fade-right">
                     <div class="insertDados">
                         <p>Insira o valor total da viagem</p>
                         <input type="number" class="valueTotal">
@@ -65,7 +96,7 @@
                     </div>
                 </div>
 
-                <div class="containersSections">
+                <div class="containersSections" data-aos="fade-left">
                     <div class="containerDatas">
                         <div class="cotantainerDatasTitle">
                             <p>Informe a data de inicio e fim de viagem</p>
@@ -81,13 +112,13 @@
                     </div>                    
                 </div>
 
-                <div class="containersSections">
+                <div class="containersSections" data-aos="fade-right">
                     <div class="intoGrafico">
                         <div id="graficoBarras"></div>
                     </div>
                 </div>
 
-                    <div class="containersSections">
+                    <div class="containersSections" data-aos="fade-left">
                         <div class="infoDiaria">
                             <p class="diariaAtual"></p>
                         </div>
@@ -99,61 +130,12 @@
 
             </div>
         </div>
-        
-
-
-
-
-
-
-
-        <!-- <div class="containerAll">
-
-            <div class="containerDados">
-                <div class="insertDados">
-                    <p>Insira o valor total da viagem</p>
-                    <input type="number" placeholder="..." class="valueTotal">
-
-                    <button class="calculaDiaria">Calcular</button>
-                </div>
-            </div>
-
-            <div class="containerDados">
-
-                <div class="ContainerapresentaDados" >
-                    <p>Prévia de dias trabalhados</p>
-                    <div class="containerResult">
-                        <p class="apresentaResult"> 0 </p>
-                    </div>
-
-                    <p class="marginTop">Prévia de folgas</p>
-                    <div class="containerResult">
-                        <p class="" id="result"> 0 </p>
-                    </div>
-                </div>
-                    
-            </div>
-
-            <div class="containerDados" id="zerarMarginTop">
-                <div class="containerDatas">
-                    <label for="">Digite a primeira Data</label>
-                    <input id="date1" type="date">
-                    <label class="up" for="">Digite a segunda Data</label>
-                    <input id="date2" type="date">
-                </div>
-                <input id="calc" type="button" value="Calcule">
-            </div>
-
-            <div class="containerDados" id="zerarMarginTop">
-                <div class="infoDiaria">
-                    <p class="diariaAtual"></p>
-                </div>
-                <div class="graficoDiaria"></div>
-            </div>
-        </div> -->
     </main>
 
     <script src="../JS/calcularData.js"></script>
     <script type="module" src="../JS/calcularDiaria.js"></script>
+    <script type="module" src="../JS/calculoHoras.js"></script>
+    <script src="../JS/AOS.js"></script>
+    <script src="../JS/footer.js"></script>
 </body>
 </html>
