@@ -84,7 +84,7 @@
     height: 95vh;
     background-color: rgb(255, 255, 255);
     border-radius: 0 10px 10px 0;
-    background-image: url("../img/homePage.png");
+/*     background-image: url("../img/homePage.png"); */
     background-size: 100%;
     background-position: center;
 }
