@@ -4,11 +4,7 @@
     margin: 0;
     padding: 0;
 }
-.navBar{
-    width: 100vw;
-    height: 70px;
-    background-color: blue;
-}
+
 
 .containerAll{
     width: 100vw;
@@ -17,6 +13,23 @@
     justify-content: center;
     align-items: center;
 }
+
+.containerReturn{
+    width: 100vw;
+    height: 50px;
+}
+    .containerReturn button{
+        width: 45px;
+        height: 45px;
+        border-radius: 30px;
+        border: none;
+        margin-left: 70px;
+        margin-top: 20px;
+        background-color: transparent;
+    }
+    .containerReturn img{
+        width: 40px;
+    }
 
 .containerDadosCompletos{
     width: 100vw;
@@ -161,6 +174,29 @@
 .intoGrafico{
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="date"]{
+    background-color: #0080ff;
+    border: none;
+    height: 28px;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    outline: 0px;
+    cursor: pointer;
+    font-family: 'Oswald';
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #fff;
+    margin-right: 2px;
+    border-radius: 2px;
+}
+
+.graficoDiaria{
     display: flex;
     justify-content: center;
     align-items: center;

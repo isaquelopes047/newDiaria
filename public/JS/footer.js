@@ -10,6 +10,7 @@ closeButton.addEventListener('click', () => {
 })
 
 openButton.addEventListener('click', () => {
+    
     let containerFooter = document.querySelector('.footerFluter')
     containerFooter.style.height = '200px'
     containerFooter.style.transitionDuration = "0.7s";

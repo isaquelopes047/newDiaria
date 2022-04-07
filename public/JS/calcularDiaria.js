@@ -53,7 +53,6 @@ buttonData.addEventListener('click', () => {
         }
 })
 
-
 /* Grafico Dash barras */
 function criaGraficoBarras() {
     google.charts.load('current', { 'packages': ['bar'] });

@@ -17,8 +17,8 @@
 
     var options = {
         title:`Dados de Diarias, base de calculo atual: ${diariaCompleta}`,
-        width:450,
-        height:200,
+        width:600,
+        height:230,
         is3D: true,
         legend: 'labeled',
         backgroundColor: 'transparent',

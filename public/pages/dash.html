@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,14 +18,8 @@
     <link rel="stylesheet" href="../style/footer.css">
     <title>Dashboard</title>
 </head>
+
 <body>
-
-    <header>
-        <nav class="navBar">
-
-        </nav>
-    </header>
-
     <main>
 
         <div class="ContainerButtonOpen">
@@ -50,40 +45,47 @@
 
         <div class="containerDadosCompletos">
 
-                <div class="cardInfo">
-                    <div class="apresetaResultadoFinal">
-                        <p class="apresentaResult"> 0 </p>
-                        <p>Dias trabalhados</p>
-                    </div>
-                    <div class="containerIcon">
-                        <img src="../icones/icons8-caminhão-48.png" alt="">
-                    </div>
+            <div class="cardInfo">
+                <div class="apresetaResultadoFinal">
+                    <p class="apresentaResult"> 0 </p>
+                    <p>Dias trabalhados</p>
                 </div>
-                <div class="cardInfo ">
-                    <div class="apresetaResultadoFinal">
-                        <p id="result" class="apresentaResult"> 0 </p>
-                        <p>Dias de folga</p>
-                    </div>
-                    <div class="containerIcon">
-                        <img src="../icones/icons8-sleep-48.png" alt="">
-                    </div>
+                <div class="containerIcon">
+                    <img src="../icones/icons8-caminhão-48.png" alt="">
                 </div>
-                <div class="cardInfo ">
-                    <div class="apresetaResultadoFinal">
-                        <p class="apresentaResulHoras"> 0 </p>
-                        <p>Horas de trabalho</p>
-                    </div>
-                    <div class="containerIcon">
-                        <img src="../icones/icons8-alarm-clock-48.png" alt="">
-                    </div>
+            </div>
+            <div class="cardInfo ">
+                <div class="apresetaResultadoFinal">
+                    <p id="result" class="apresentaResult"> 0 </p>
+                    <p>Dias de folga</p>
                 </div>
-                <div class="cardInfo ">
+                <div class="containerIcon">
+                    <img src="../icones/icons8-sleep-48.png" alt="">
+                </div>
+            </div>
+            <div class="cardInfo ">
+                <div class="apresetaResultadoFinal">
+                    <p class="apresentaResulHoras"> 0 </p>
+                    <p>Horas de trabalho</p>
+                </div>
+                <div class="containerIcon">
+                    <img src="../icones/icons8-alarm-clock-48.png" alt="">
+                </div>
+            </div>
+            <div class="cardInfo ">
 
-                </div>
-
+            </div>
         </div>
-        
-        <div class="containerAll" >
+
+        <div class="containerReturn">
+            <button>
+                <a href="../index.html">
+                    <img src="../icones/icons8-retornar-48.png" alt="">
+                </a>
+            </button>
+        </div>
+
+        <div class="containerAll">
             <div class="containerInfoDados">
 
                 <!-- Calcula Diaria -->
@@ -91,7 +93,7 @@
                     <div class="insertDados">
                         <p>Insira o valor total da viagem</p>
                         <input type="number" class="valueTotal">
-    
+
                         <button class="calculaDiaria">Calcular</button>
                     </div>
                 </div>
@@ -109,7 +111,7 @@
                         <div class="containerDataButton">
                             <button id="calc" type="button" value="Calcule">Calcular</button>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
 
                 <div class="containersSections" data-aos="fade-right">
@@ -118,17 +120,17 @@
                     </div>
                 </div>
 
-                    <div class="containersSections" data-aos="fade-left">
-                        <div class="infoDiaria">
-                            <p class="diariaAtual"></p>
-                        </div>
-                        <div class="graficoDiaria">
+                <div class="containersSections" data-aos="fade-left">
+                    <div class="infoDiaria">
+                        <p class="diariaAtual"></p>
+                    </div>
+                    <div class="graficoDiaria">
 
-                        </div>
                     </div>
                 </div>
-
             </div>
+
+        </div>
         </div>
     </main>
 
@@ -137,5 +139,7 @@
     <script type="module" src="../JS/calculoHoras.js"></script>
     <script src="../JS/AOS.js"></script>
     <script src="../JS/footer.js"></script>
+    <script src="../JS/dataAtual.js"></script>
 </body>
+
 </html>
